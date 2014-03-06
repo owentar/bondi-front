@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <title>Bondi</title>
+ 
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="White-Rabbit">
+ 
+    <!-- CSS -->
+    <link href='/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='/css/media.css' rel='stylesheet' type='text/css'>
+    <link href='/css/style.css' rel='stylesheet' type='text/css'>
+    <link href='/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+    <link href='/css/jquery-ui-1.10.3.custom.min.css' rel='stylesheet' type='text/css'>
+    <link href='/css/chosen.css' rel='stylesheet' type='text/css'>
+ 
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
+    <script type="text/javascript" src="/js/vendor/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="/js/vendor/bootstrap.js"></script>
+    <script type="text/javascript" src="//www.parsecdn.com/js/parse-1.2.12.min.js"></script>
+    <script type="text/javascript" src="/js/vendor/modernizr.custom.js"></script>
+    <script type="text/javascript" src="/js/bondi/parse.js"></script>
+    <script type="text/javascript" src="/js/vendor/json2.js"></script>
+    <script type="text/javascript" src="/js/vendor/backbone.js"></script>
+    <script type="text/javascript" src="/js/vendor/backbone.wreqr.js"></script>
+    <script type="text/javascript" src="/js/vendor/backbone.babysitter.js"></script>
+    <script type="text/javascript" src="/js/vendor/backbone.marionette.js"></script>
+ 
+    <%- script %>
+  </head>
+  <body>
+    <% include header %>
+ 
+    <section class="main-content">
+      <%- body %>
+    </section>
+ 
+    <% include footer %>
+  </body>
+</html>
