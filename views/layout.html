@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <title>{% block title %}Bondi{% endblock %}</title>
+ 
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="White-Rabbit">
+ 
+    <!-- CSS -->
+    <link href='/css/styles.css' rel='stylesheet' type='text/css'>
+    <link href='/css/jquery-ui-1.10.3.custom.min.css' rel='stylesheet' type='text/css'>
+
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../js/vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../js/vendor/chosen_v1.1.0/chosen.css" />
+    <!-- endbower -->
+ 
+    <!-- bower:js -->
+    <script src="/../js/vendor/jquery/dist/jquery.js"></script>
+    <script src="/../js/vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/../js/vendor/underscore/underscore.js"></script>
+    <script src="/../js/vendor/backbone/backbone.js"></script>
+    <script src="/../js/vendor/backbone.babysitter/lib/backbone.babysitter.js"></script>
+    <script src="/../js/vendor/backbone.wreqr/lib/backbone.wreqr.js"></script>
+    <script src="/../js/vendor/marionette/lib/backbone.marionette.js"></script>
+    <script src="/../js/vendor/marionette/lib/core/amd/backbone.marionette.js"></script>
+    <script src="/../js/vendor/chosen_v1.1.0/chosen.jquery.js"></script>
+    <!-- endbower -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+    
+    <script type="text/javascript" src="/js/bondi/app.js"></script>
+ 
+    {% block scripts %}{% endblock %}
+  </head>
+  <body>
+    {% include "header.html" %}
+ 
+    <section id="main-region" class="container">
+      {% block content %}{% endblock %}
+    </section>
+ 
+    {% include "footer.html" %}
+  </body>
+</html>

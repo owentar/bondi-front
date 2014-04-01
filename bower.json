@@ -1,0 +1,11 @@
+{
+  "name": "bondi-front",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.0.3",
+    "jquery": "~1.11.0",
+    "marionette": "~1.7.3",
+    "chosen_v1.1.0": "https://github.com/harvesthq/chosen/releases/download/v1.1.0/chosen_v1.1.0.zip"
+  },
+  "devDependencies": {}
+}
