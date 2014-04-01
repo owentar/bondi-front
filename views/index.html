@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+{% block scripts %}
+<script id="filter_template" type="text/template">
+    <form >
+        <div class="form-group">
+            <label for="address">Tu dirección</label>
+            <input type="text" class="form-control" id="address" name="address" placeholder="Av. Corrientes 1234">
+        </div>
+
+        <div class="form-group">
+            <label for="bus">Colectivo</label>
+            <select class="form-control" id="bus" name="bus" style="width: 100px;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="range">Distancia</label>
+        </div>
+
+        <button id="search" type="submit" class="btn btn-default">Buscar</button>
+    </form>
+</script>
+
+<script id="map_template" type="text/template">
+</script>
+
+<script id="layout_template" type="text/template">
+    <section id="filters"></section>
+
+    <section id="map"></section>
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        Bondi.start();
+    });
+</script>
+{% endblock %}
